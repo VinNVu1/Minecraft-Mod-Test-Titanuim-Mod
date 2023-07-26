@@ -2,6 +2,12 @@
   "item.testmod.titanium": "Titanium",
   "item.testmod.rutile_ore": "Rutile Ore",
 
-  "creativemodetab.test_tab": "Test Tab"
+
+  "block.testmod.titanium_block": "Titanium Block",
+  "block.testmod.rutile_ore_block": "Rutile Ore Block",
+  "block.testmod.deepslate_rutile_ore_block": "Deepslate Rutile Ore Block",
+
+
+  "creativemodetab.test_tab": "Test Mod Tab"
 
 }

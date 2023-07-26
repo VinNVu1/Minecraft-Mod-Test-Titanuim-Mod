@@ -1,9 +1,9 @@
 package com.veeveemods.testmod;
 
 import com.mojang.logging.LogUtils;
+import com.veeveemods.testmod.block.ModBlocks;
 import com.veeveemods.testmod.item.ModCreativeModeTabs;
 import com.veeveemods.testmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +31,7 @@ public class TestMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -52,6 +53,9 @@ public class TestMod
         if(event.getTab() == ModCreativeModeTabs.TEST_TAB) {
             event.accept(ModItems.TITANIUM);
             event.accept(ModItems.RUTILE_ORE);
+            event.accept(ModBlocks.TITANIUM_BLOCK);
+            event.accept(ModBlocks.RUTILE_ORE_BLOCK);
+            event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
         }
 
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
@@ -59,6 +63,14 @@ public class TestMod
             event.accept(ModItems.RUTILE_ORE);
         }
 
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.RUTILE_ORE_BLOCK);
+            event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
+        }
+
+            if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TITANIUM_BLOCK);
+        }
 
     }
 
