@@ -30,16 +30,27 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUTILE_ORE_BLOCK = registerBlock("rutile_ore_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3.0F, 3.0F)
-                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
+                    .strength(5f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(2, 6)
             ));
-
     public static final RegistryObject<Block> DEEPSLATE_RUTILE_ORE_BLOCK = registerBlock("deepslate_rutile_ore_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4.5F, 3.0F)
-                    .sound(SoundType.DEEPSLATE)
-                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
+                    .strength(8f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(2, 6)
             ));
+//
+//    public static final RegistryObject<Block> RUTILE_ORE_BLOCK = registerBlock("rutile_ore_block",
+//            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+//                    .strength(3.0F, 3.0F)
+//                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
+//            ));
+//
+//    public static final RegistryObject<Block> DEEPSLATE_RUTILE_ORE_BLOCK = registerBlock("deepslate_rutile_ore_block",
+//            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+//                    .strength(4.5F, 3.0F)
+//                    .sound(SoundType.DEEPSLATE)
+//                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
+//            ));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

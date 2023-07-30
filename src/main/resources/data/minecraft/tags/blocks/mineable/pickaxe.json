@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":[
+    "testmod:titanium_block",
+    "testmod:rutile_ore_block",
+    "testmod:deepslate_rutile_ore_block"
+  ]
+}

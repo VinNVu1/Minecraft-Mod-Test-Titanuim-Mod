@@ -2,6 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -26,13 +27,13 @@
               ],
               "name": "testmod:rutile_ore_block"
             },
-            { //TODO: also add raw_iron as an extra drop also
+            {
               "type": "minecraft:item",
               "functions": [
                 {
+                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "formula": "minecraft:ore_drops"
                 },
                 {
                   "function": "minecraft:explosion_decay"
@@ -42,8 +43,7 @@
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ]
 }
