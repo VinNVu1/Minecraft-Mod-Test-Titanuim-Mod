@@ -16,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUTILE_ORE = ITEMS.register("rutile_ore",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_IRON_FRAGMENTS = ITEMS.register("raw_iron_fragment",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

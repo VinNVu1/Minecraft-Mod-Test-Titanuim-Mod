@@ -53,6 +53,7 @@ public class TestMod
         if(event.getTab() == ModCreativeModeTabs.TEST_TAB) {
             event.accept(ModItems.TITANIUM);
             event.accept(ModItems.RUTILE_ORE);
+            event.accept(ModItems.RAW_IRON_FRAGMENTS);
             event.accept(ModBlocks.TITANIUM_BLOCK);
             event.accept(ModBlocks.RUTILE_ORE_BLOCK);
             event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
@@ -61,6 +62,7 @@ public class TestMod
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.TITANIUM);
             event.accept(ModItems.RUTILE_ORE);
+            event.accept(ModItems.RAW_IRON_FRAGMENTS);
         }
 
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
