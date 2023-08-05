@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "titanium",
+  "ingredient": {
+    "item": "testmod:deepslate_rutile_ore_block"
+  },
+  "result": "testmod:titanium"
+}
