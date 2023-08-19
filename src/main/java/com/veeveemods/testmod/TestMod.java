@@ -7,7 +7,7 @@ import com.veeveemods.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +30,8 @@ public class TestMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -48,9 +50,9 @@ public class TestMod
 
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTab() == ModCreativeModeTabs.TEST_TAB) {
+        if(event.getTab() == ModCreativeModeTabs.TEST_TAB.get()) {
             event.accept(ModItems.TITANIUM);
             event.accept(ModItems.RUTILE_ORE);
             event.accept(ModItems.RAW_IRON_FRAGMENTS);
@@ -59,18 +61,18 @@ public class TestMod
             event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
         }
 
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.TITANIUM);
             event.accept(ModItems.RUTILE_ORE);
             event.accept(ModItems.RAW_IRON_FRAGMENTS);
         }
 
-        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.RUTILE_ORE_BLOCK);
             event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
         }
 
-            if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TITANIUM_BLOCK);
         }
 

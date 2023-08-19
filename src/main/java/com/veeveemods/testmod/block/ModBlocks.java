@@ -4,12 +4,12 @@ import com.veeveemods.testmod.TestMod;
 import com.veeveemods.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,19 +23,19 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
 
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .strength(6f)
                     .requiresCorrectToolForDrops()
             ));
 
     public static final RegistryObject<Block> RUTILE_ORE_BLOCK = registerBlock("rutile_ore_block",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3.0F, 3.0F)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
             ));
 
     public static final RegistryObject<Block> DEEPSLATE_RUTILE_ORE_BLOCK = registerBlock("deepslate_rutile_ore_block",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)
