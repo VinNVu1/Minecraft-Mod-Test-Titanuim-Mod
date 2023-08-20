@@ -1,0 +1,6 @@
+1. Make a way to have the ore drop two different items via DataGen.
+2. Make Titanium Tools
+3. Have ore generate within world
+4. Make a mob?
+
+

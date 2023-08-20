@@ -7,6 +7,7 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.List;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
@@ -23,7 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
 
 //        add(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(),
-//                (block) -> createMultiOreDrop(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(), List.of(ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENT.get())));
+//                (block) -> createOreDrop(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(), List.of(ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENT.get())));
 
         add(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(),
                 (block) -> createOreDrop(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(), ModItems.RUTILE_ORE.get()));
