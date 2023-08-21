@@ -1,0 +1,4 @@
+// 1.20.1	2023-08-20T22:52:44.6475144	Loot Tables
+9b0ccd7dccceaef8994112219af09a3e9852fc8f data/testmod/loot_tables/blocks/deepslate_rutile_ore_block.json
+2addb08a33ed2e8e96f2151b2d634d6c8ca943e8 data/testmod/loot_tables/blocks/rutile_ore_block.json
+a075f810cb03dda0256f868f4ddc4becd6461203 data/testmod/loot_tables/blocks/titanium_block.json
