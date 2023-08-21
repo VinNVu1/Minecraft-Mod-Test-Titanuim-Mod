@@ -1,0 +1,10 @@
+// 1.20.1	2023-08-20T22:19:29.8867312	Block States: testmod
+e09f5da850e030a1a828937e67be5916468d7a84 assets/testmod/blockstates/deepslate_rutile_ore_block.json
+ff0efe027fe0177f7eed40117dedae756658e1ee assets/testmod/blockstates/rutile_ore_block.json
+f0f09d50e2bf0866409a23e7bb3722b7a76b0260 assets/testmod/blockstates/titanium_block.json
+6c6c7503059951caf8eda3f67b86bc08f34c2bb3 assets/testmod/models/block/deepslate_rutile_ore_block.json
+f15d21e37fadef4cee0c46053ee090c072f4b227 assets/testmod/models/block/rutile_ore_block.json
+e9236731fa5feeebf401322abb0ccf0bb2f7fd4a assets/testmod/models/block/titanium_block.json
+adf6a1a4085e32fa70e7b30dc1a603af3c13cd9d assets/testmod/models/item/deepslate_rutile_ore_block.json
+9c2d51882e4b062c73b98103e1950e0d0189e77c assets/testmod/models/item/rutile_ore_block.json
+236e821981777a75132afae02d8bfc8ccba1b985 assets/testmod/models/item/titanium_block.json
