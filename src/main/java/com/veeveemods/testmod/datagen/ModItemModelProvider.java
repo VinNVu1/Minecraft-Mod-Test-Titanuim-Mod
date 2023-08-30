@@ -20,6 +20,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TITANIUM);
         simpleItem(ModItems.RUTILE_ORE);
         simpleItem(ModItems.RAW_IRON_FRAGMENTS);
+
+        handheldItem(ModItems.TITANIUM_SWORD);
+        handheldItem(ModItems.TITANIUM_AXE);
+        handheldItem(ModItems.TITANIUM_PICKAXE);
+        handheldItem(ModItems.TITANIUM_HOE);
+        handheldItem(ModItems.TITANIUM_SHOVEL);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

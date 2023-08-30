@@ -59,6 +59,11 @@ public class TestMod
             event.accept(ModBlocks.TITANIUM_BLOCK);
             event.accept(ModBlocks.RUTILE_ORE_BLOCK);
             event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
+            event.accept(ModItems.TITANIUM_SWORD);
+            event.accept(ModItems.TITANIUM_SHOVEL);
+            event.accept(ModItems.TITANIUM_PICKAXE);
+            event.accept(ModItems.TITANIUM_AXE);
+            event.accept(ModItems.TITANIUM_HOE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -67,12 +72,23 @@ public class TestMod
             event.accept(ModItems.RAW_IRON_FRAGMENTS);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.TITANIUM_SWORD);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.TITANIUM_SHOVEL);
+            event.accept(ModItems.TITANIUM_PICKAXE);
+            event.accept(ModItems.TITANIUM_AXE);
+            event.accept(ModItems.TITANIUM_HOE);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.RUTILE_ORE_BLOCK);
             event.accept(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK);
         }
 
-            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TITANIUM_BLOCK);
         }
 

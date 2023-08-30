@@ -23,7 +23,9 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
-    LootItemCondition.Builder HAS_SILK_TOUCH = MatchTool.toolMatches(ItemPredicate.Builder.item().hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))));
+    LootItemCondition.Builder HAS_SILK_TOUCH = MatchTool.toolMatches(ItemPredicate.Builder.item()
+            .hasEnchantment(new EnchantmentPredicate(Enchantments
+                    .SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))));
 
     public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
@@ -34,25 +36,25 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.TITANIUM_BLOCK.get());
 
         add(ModBlocks.RUTILE_ORE_BLOCK.get(),
-                (block) -> createMultiOreDrop(ModBlocks.RUTILE_ORE_BLOCK.get(), ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENTS.get(), HAS_SILK_TOUCH));
+                (block) -> createMultiOreDrop(ModBlocks.RUTILE_ORE_BLOCK.get(), ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENTS.get()));
 
         add(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(),
-                (block) -> createMultiOreDrop(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(), ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENTS.get(), HAS_SILK_TOUCH));
+                (block) -> createMultiOreDrop(ModBlocks.DEEPSLATE_RUTILE_ORE_BLOCK.get(), ModItems.RUTILE_ORE.get(), ModItems.RAW_IRON_FRAGMENTS.get()));
 
     }
 
-    protected LootTable.Builder createMultiOreDrop(Block block, Item item1, Item item2, LootItemCondition.Builder builder) {
+    protected LootTable.Builder createMultiOreDrop(Block block, Item item1, Item item2) {
         return this.applyExplosionDecay(block,
                 LootTable.lootTable()
                         .withPool(LootPool.lootPool()
                                 .add(LootItem
                                         .lootTableItem(block)
-                                        .when(builder)
+                                        .when(HAS_SILK_TOUCH)
                                         .otherwise(LootItem
                                                 .lootTableItem(item1)
                                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))))
                         .withPool(LootPool.lootPool()
-                                .when(builder.invert())
+                                .when(HAS_SILK_TOUCH.invert())
                                 .add(LootItem
                                         .lootTableItem(item2)
                                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F)))

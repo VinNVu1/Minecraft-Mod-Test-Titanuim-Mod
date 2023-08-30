@@ -3,6 +3,11 @@
   "item.testmod.rutile_ore": "Rutile Ore",
   "item.testmod.raw_iron_fragment": "Raw Iron Fragment",
 
+  "item.testmod.titanium_sword": "Titanium Sword",
+  "item.testmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.testmod.titanium_axe": "Titanium Axe",
+  "item.testmod.titanium_shovel": "Titanium Shovel",
+  "item.testmod.titanium_hoe": "Titanium Hoe",
 
   "block.testmod.titanium_block": "Titanium Block",
   "block.testmod.rutile_ore_block": "Rutile Ore Block",

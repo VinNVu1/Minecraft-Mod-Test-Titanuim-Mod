@@ -1,4 +1,9 @@
-// 1.20.1	2023-08-20T22:19:29.8877326	Item Models: testmod
+// 1.20.1	2023-08-30T02:04:18.4371442	Item Models: testmod
 6bddd62e6216797365d8178befc45044c1eff7f5 assets/testmod/models/item/raw_iron_fragment.json
 e0cebaf8f50a30a2c319034e5095ac22945d866b assets/testmod/models/item/rutile_ore.json
 a195cc06128a72135064de2e0e305d50f6a24d0f assets/testmod/models/item/titanium.json
+9df939942c8cc51745c51fbaf734fe56e5e8ef99 assets/testmod/models/item/titanium_axe.json
+00297fbf774d6362c17168626f9e31b845fd886d assets/testmod/models/item/titanium_hoe.json
+43021ee56008b0e7a7490a548b0bf7f1059e94e7 assets/testmod/models/item/titanium_pickaxe.json
+efaf6aa9aadcdde465d2177da33aabb533fd5edc assets/testmod/models/item/titanium_shovel.json
+43e6dc8fc84336bd0572c13dde24159fc7c8afc4 assets/testmod/models/item/titanium_sword.json
