@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier TITANIUM = TierSortingRegistry.registerTier(
-            new ForgeTier(2, 1300, 7f, 2.5f, 14,
+            new ForgeTier(2, 1300, 3, -2.4F, 14,
                     ModTags.Blocks.NEEDS_TITANIUM_TOOL, () -> Ingredient.of(ModItems.TITANIUM.get())),
             new ResourceLocation(TestMod.MODID, "titanium"),
             List.of(Tiers.IRON),

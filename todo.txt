@@ -6,7 +6,7 @@
 5. Make Titanium Shield with 1 Titanium and 6 Iron (find and do code under TODO in ModItems.java)
 6. Make Titanium Armor and Full effect
 7. Fix Pickaxe (Image is mirrored)
-8. Update Forge version folder to 1.20
+8. Update Forge version folder to 1.20 COMPLETE
 9. Revamp ModCreativeMode
 
 
